@@ -116,9 +116,8 @@ export default function Dashboard() {
 
   // Generate QR URL with token for secure sharing (no personal data in QR)
   const policyToken = (policies[0] as any)?.token;
-  const baseUrl = import.meta.env.VITE_APP_URL || window.location.origin;
   const qrUrl = policyToken 
-    ? `${baseUrl}/p/${policyToken}`
+    ? `${window.location.origin}/p/${policyToken}`
     : "";
 
   const displayName = profile?.full_name || user?.email?.split("@")[0] || "Driver";

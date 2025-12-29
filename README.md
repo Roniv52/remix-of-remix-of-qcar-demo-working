@@ -71,10 +71,3 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
-
-## Configuration
-
-To generate public QR codes, you need to set the `VITE_APP_URL` in the `.env` file. This should be the public URL of your application.
-
-Example:
-`VITE_APP_URL=https://my-qcar-app.com`
